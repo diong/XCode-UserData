@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kattr</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (!_&lt;#attr name#&gt;) {
+        _&lt;#attr name#&gt; = [[&lt;#class name#&gt; alloc] init];
+    }
+    return _&lt;#attr name#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5BD3867E-724B-4DC6-864F-3507B910C7A8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>attr</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kattr</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

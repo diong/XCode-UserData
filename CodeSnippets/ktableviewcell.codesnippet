@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ktableviewcell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (BOOL)requiresConstraintBasedLayout
+{
+    return YES;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        &lt;#init code#&gt;
+    }
+    return self;
+}
+
+- (void)updateConstraints
+{
+    [self.&lt;#subview#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
+    [super updateConstraints];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>855A704B-CD7D-4691-8DC9-DD780B63FF3F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>tableviewcell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ktableviewcell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
