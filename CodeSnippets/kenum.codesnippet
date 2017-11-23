@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kimport</string>
+	<string>kenum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#import "&lt;#header.h#&gt;"</string>
+	<string>typedef NS_ENUM(NSInteger, &lt;#typename#&gt;)
+{
+    &lt;#typevalue#&gt;
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>405E64FF-8221-4F49-8FC4-A8DC0447FD48</string>
+	<string>31997415-05F8-4EEC-8614-E3F4D3F3B202</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#import ""</string>
+	<string>typedef NS_ENUM(NSInteger, )</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kimport</string>
+	<string>kenum</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

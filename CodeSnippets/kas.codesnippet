@@ -7,9 +7,10 @@
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (strong, nonatomic) &lt;#type#&gt;* &lt;#property#&gt;;</string>
+	<string>@property (strong, nonatomic) &lt;#type#&gt; *&lt;#property#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3224778F-E1F5-483D-BD00-B33D9D4A4CDC</string>
 	<key>IDECodeSnippetLanguage</key>
