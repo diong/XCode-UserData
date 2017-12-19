@@ -71,7 +71,7 @@
 	<key>DVTMarkupTextStrongFont</key>
 	<string>.AppleSystemUIFontBold - 10.0</string>
 	<key>DVTSourceTextBackground</key>
-	<string>0.121569 0.12549 0.160784 1</string>
+	<string>0.133333 0.133333 0.133333 1</string>
 	<key>DVTSourceTextBlockDimBackgroundColor</key>
 	<string>0.5 0.5 0.5 1</string>
 	<key>DVTSourceTextCurrentLineHighlightColor</key>
