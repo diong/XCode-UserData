@@ -9,8 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)init
-{
+	<string>- (instancetype)init {
     self = [super init];
     if (self) {
         &lt;#init code#&gt;

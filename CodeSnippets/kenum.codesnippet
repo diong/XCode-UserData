@@ -9,8 +9,7 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NS_ENUM(NSInteger, &lt;#typename#&gt;)
-{
+	<string>typedef NS_ENUM(NSInteger, &lt;#typename#&gt;) {
     &lt;#typevalue#&gt;
 };</string>
 	<key>IDECodeSnippetIdentifier</key>

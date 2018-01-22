@@ -9,8 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#btn name#&gt;Action:(UIButton *)btn
-{
+	<string>- (void)&lt;#btn name#&gt;Action:(UIButton *)btn {
     &lt;#action code#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

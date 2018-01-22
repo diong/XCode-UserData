@@ -9,13 +9,11 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (BOOL)requiresConstraintBasedLayout
-{
+	<string>+ (BOOL)requiresConstraintBasedLayout {
     return YES;
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -24,8 +22,7 @@
     return self;
 }
 
-- (void)updateConstraints
-{
+- (void)updateConstraints {
     [self.&lt;#subview#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];

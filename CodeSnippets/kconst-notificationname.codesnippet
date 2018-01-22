@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kaa</string>
+	<string>kconst-notificationname</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassInterfaceMethods</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, assign) &lt;#type#&gt; &lt;#property#&gt;;</string>
+	<string>UIKIT_EXTERN NSNotificationName const &lt;#notification name#&gt;Notification;
+
+NSNotificationName const &lt;#notification name#&gt;Notification = @"&lt;#notification name#&gt;Notification";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>334A2F49-EB08-4120-BB1D-E948A029B985</string>
+	<string>CBF3DD11-D23D-470B-9598-D752AD21272A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>@property (assign, nonatomic)</string>
+	<string>UIKIT_EXTERN NSNotificationName const ***;</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kaa</string>
+	<string>kconst-notificationname</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

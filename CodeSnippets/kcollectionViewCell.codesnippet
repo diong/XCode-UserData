@@ -9,13 +9,11 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (BOOL)requiresConstraintBasedLayout
-{
+	<string>+ (BOOL)requiresConstraintBasedLayout {
     return YES;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         &lt;#init code#&gt;
@@ -23,8 +21,7 @@
     return self;
 }
 
-- (void)updateConstraints
-{
+- (void)updateConstraints {
     [self.&lt;#subview#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
     }];

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ksobject</string>
+	<string>kslazyloading</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - NSObject</string>
+	<string>#pragma mark - Lazy Loading</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E0FCBDC1-D908-47DC-8F0B-105160DAB1D3</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>#pragma mark - NSObject</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ksobject</string>
+	<string>kslazyloading</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

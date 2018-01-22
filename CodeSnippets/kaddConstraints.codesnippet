@@ -9,8 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)addConstraints
-{
+	<string>- (void)addConstraints {
     [self.&lt;#subview#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];

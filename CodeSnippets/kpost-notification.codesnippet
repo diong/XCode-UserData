@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kaa</string>
+	<string>kpost-notification</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, assign) &lt;#type#&gt; &lt;#property#&gt;;</string>
+	<string>[[NSNotificationCenter defaultCenter] postNotificationName:&lt;#name#&gt; object:&lt;#object#&gt; userInfo:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>334A2F49-EB08-4120-BB1D-E948A029B985</string>
+	<string>88FA8AAE-7C3B-4F54-8E89-F908092DF839</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>@property (assign, nonatomic)</string>
+	<string>[[NSNotificationCenter defaultCenter] postNotificationName</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kaa</string>
+	<string>kpost-notification</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
