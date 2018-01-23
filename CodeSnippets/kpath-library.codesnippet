@@ -6,12 +6,11 @@
 	<string>kpath-library</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
 		<string>CodeBlock</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSString *)libraryPath
-{
+	<string>+ (NSString *)libraryPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
     NSString *libraryDir = [paths objectAtIndex:0];
     return libraryDir;

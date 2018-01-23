@@ -6,6 +6,7 @@
 	<string>kpath-bundle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
 		<string>CodeBlock</string>
 		<string>ClassImplementation</string>
 	</array>

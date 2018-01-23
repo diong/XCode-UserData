@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath-cache</string>
+	<string>ksactions</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSString *)cachesPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachesDir = [paths objectAtIndex:0];
-    return cachesDir;
-}</string>
+	<string>#pragma mark - Actions</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F601A711-B94C-445C-9E64-6D23E8853D80</string>
+	<string>AE97E9B6-7561-41A0-8F9F-CB76AEDC702F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>+ (NSString *)cachesPath</string>
+	<string>#pragma mark - Actions</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath-cache</string>
+	<string>ksactions</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
