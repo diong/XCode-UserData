@@ -9,13 +9,13 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Custom Mothods</string>
+	<string>#pragma mark - Custom Methods</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BB0180B0-D778-45B2-B4B7-FDD8F67EF43F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#pragma mark - Custom Mothods</string>
+	<string>#pragma mark - Custom Methods</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>ksc</string>
 	<key>IDECodeSnippetUserSnippet</key>

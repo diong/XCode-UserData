@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kenum</string>
+	<string>kslifecycle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NS_ENUM(NSInteger, &lt;#typename#&gt;) {
-    &lt;#typevalue#&gt;
-};</string>
+	<string>#pragma mark - Life Cycle</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>31997415-05F8-4EEC-8614-E3F4D3F3B202</string>
+	<string>CA29AFD4-E9A9-4C5D-BA31-3D71E8562866</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>typedef NS_ENUM(NSInteger, )</string>
+	<string>#pragma mark - Life Cycle</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kenum</string>
+	<string>kslifecycle</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
