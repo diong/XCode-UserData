@@ -10,7 +10,7 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIKIT_EXTERN NSString *const &lt;#const name#&gt;;
+	<string>extern NSString *const &lt;#const name#&gt;;
 
 NSString *const &lt;#const name#&gt; = @"&lt;#const name#&gt;";</string>
 	<key>IDECodeSnippetIdentifier</key>

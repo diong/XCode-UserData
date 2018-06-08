@@ -10,7 +10,7 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIKIT_EXTERN NSNotificationName const &lt;#notification name#&gt;Notification;
+	<string>extern NSNotificationName const &lt;#notification name#&gt;Notification;
 
 NSNotificationName const &lt;#notification name#&gt;Notification = @"&lt;#notification name#&gt;Notification";</string>
 	<key>IDECodeSnippetIdentifier</key>
