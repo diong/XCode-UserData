@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath-document</string>
+	<string>kpath_document</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -22,7 +22,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>+ (NSString *)documentsPath</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath-document</string>
+	<string>kpath_document</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

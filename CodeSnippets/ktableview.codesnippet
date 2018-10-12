@@ -17,6 +17,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+    cell.textLabel.text = [NSString stringWithFormat:@"[%ld, %ld]", (long)indexPath.section, (long)indexPath.row];
     return cell;
 }
 
@@ -38,12 +39,17 @@
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
-        _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-        _tableView.layoutMargins = UIEdgeInsetsMake(0, 0, 0, 0);
-        _tableView.separatorColor = [UIColor colorWithRGB:0xf0f0f0];
+        _tableView.separatorInset = UIEdgeInsetsMake(0, 12, 0, 0);
+        _tableView.layoutMargins = UIEdgeInsetsMake(0, 12, 0, 0);
+        _tableView.separatorColor = [UIColor colorWithRGB:0xE8E8E8];
         _tableView.estimatedRowHeight = 0;
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.estimatedSectionFooterHeight = 0;
+#ifdef __IPHONE_11_0
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+#endif
     }
     return _tableView;
 }</string>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kinit_request_list</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+                if ([input isEqualToString:BDReload]) {
+                    self.pageNumber = 1;
+                }
+                NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+                [params setValue:[NSNumber numberWithInteger:self.pageNumber] forKey:@"page[Number]"];
+                [params setValue:[NSNumber numberWithInteger:self.pageSize] forKey:@"page[Size]"];
+                NSMutableURLRequest *request = [NSMutableURLRequest GETWithURLString:@"carousels/home" parameters:params resolveClass:[BDResponseModel class]];
+                [[BDHTTPSessionManager shareManager] request:request success:^(NSURLSessionDataTask *task, BDResponseModel * _Nullable responseModel) {
+                    if (responseModel.code == 200) {
+                        if ([input isEqualToString:BDReload]) {
+                            [self.dataArray removeAllObjects];
+                        }
+                        BDHotTopicListModel *model = (BDHotTopicListModel *)responseModel;
+                        if (model.data.count &gt; 0) {
+                            self.pageNumber++;
+                            [self.dataArray addObjectsFromArray:model.data];
+                        }
+                        if (model.data.count &lt; self.pageSize) {
+                            model.isNoMoreData = YES;
+                        }
+                        [subscriber sendNext:model];
+                        [subscriber sendCompleted];
+                    } else {
+                        [subscriber sendError:[responseModel responseError]];
+                    }
+                } failure:^(NSURLSessionDataTask * _Nullable task, NSError *error) {
+                    [subscriber sendError:error];
+                }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>55F00F94-333C-4BDB-9D21-17F82F201E0F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kinit_request_list</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

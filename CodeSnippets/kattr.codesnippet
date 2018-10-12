@@ -10,9 +10,9 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>if (!_&lt;#attr name#&gt;) {
-        _&lt;#attr name#&gt; = [[&lt;#class name#&gt; alloc] init];
-    }
-    return _&lt;#attr name#&gt;;</string>
+    _&lt;#attr name#&gt; = [[&lt;#class name#&gt; alloc] init];
+}
+return _&lt;#attr name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5BD3867E-724B-4DC6-864F-3507B910C7A8</string>
 	<key>IDECodeSnippetLanguage</key>

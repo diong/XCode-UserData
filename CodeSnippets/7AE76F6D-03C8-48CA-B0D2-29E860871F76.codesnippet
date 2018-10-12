@@ -3,26 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath_cache</string>
+	<string>kattr_viewmodel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSString *)cachesPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachesDir = [paths objectAtIndex:0];
-    return cachesDir;
-}</string>
+	<string>if (!_viewModel) {
+    _viewModel = [[&lt;#class name#&gt; alloc] init];
+}
+return _viewModel;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F601A711-B94C-445C-9E64-6D23E8853D80</string>
+	<string>7AE76F6D-03C8-48CA-B0D2-29E860871F76</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>+ (NSString *)cachesPath</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath_cache</string>
+	<string>kattr_viewmodel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

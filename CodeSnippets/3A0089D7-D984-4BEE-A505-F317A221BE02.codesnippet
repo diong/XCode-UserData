@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kinit_privacy</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;SafariServices/SafariServices.h&gt;
+SFSafariViewControllerDelegate
+- (void)showPrivacy {
+    NSURL *url = [NSURL URLWithString:@"https://www.jianshu.com/p/fb345e24a266?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends"];
+    SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:url];
+    safariVC.delegate = self;
+    // 建议
+    [self presentViewController:safariVC animated:YES completion:nil];
+}
+
+#pragma mark - SFSafariViewControllerDelegate
+//加载完成
+- (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully {
+    
+}
+
+//点击左上角的done
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3A0089D7-D984-4BEE-A505-F317A221BE02</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>SFSafariViewControllerDelegate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kinit_privacy</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

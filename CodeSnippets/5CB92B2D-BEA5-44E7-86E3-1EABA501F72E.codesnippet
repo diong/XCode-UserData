@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kinit_request_get</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+[params setValue:@"1" forKey:@"page[Number]"];
+[params setValue:@"20" forKey:@"page[Size]"];
+NSMutableURLRequest *request = [NSMutableURLRequest GETWithURLString:@"carousels/home" parameters:params resolveClass:[BDResponseModel class]];
+[[BDHTTPSessionManager shareManager] request:request success:^(NSURLSessionDataTask *task, BDResponseModel * _Nullable responseModel) {
+    if (responseModel.code == 200) {
+        [subscriber sendNext:responseModel];
+        [subscriber sendCompleted];
+    } else {
+        [subscriber sendError:[responseModel responseError]];
+    }
+} failure:^(NSURLSessionDataTask * _Nullable task, NSError *error) {
+    [subscriber sendError:error];
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5CB92B2D-BEA5-44E7-86E3-1EABA501F72E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kinit_request_get</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

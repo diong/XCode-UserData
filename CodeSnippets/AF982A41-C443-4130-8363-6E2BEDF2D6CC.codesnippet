@@ -3,26 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath_cache</string>
+	<string>kattr_command</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSString *)cachesPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachesDir = [paths objectAtIndex:0];
-    return cachesDir;
-}</string>
+	<string>    if (!_&lt;#attr name#&gt;) {
+        _&lt;#attr name#&gt; = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal createSignal:^RACDisposable * _Nullable(id&lt;RACSubscriber&gt;  _Nonnull subscriber) {
+                
+                return nil;
+            }];
+        }];
+    }
+    return _&lt;#attr name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F601A711-B94C-445C-9E64-6D23E8853D80</string>
+	<string>AF982A41-C443-4130-8363-6E2BEDF2D6CC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>+ (NSString *)cachesPath</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath_cache</string>
+	<string>kattr_command</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

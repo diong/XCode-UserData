@@ -3,26 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath_cache</string>
+	<string>kinit_viewdidload</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSString *)cachesPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachesDir = [paths objectAtIndex:0];
-    return cachesDir;
-}</string>
+	<string>    [self initViewController];
+    [self addSubViews];
+    [self bindViewModel];
+    [self loadData];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F601A711-B94C-445C-9E64-6D23E8853D80</string>
+	<string>4CD9379D-64E7-409F-9072-7505742D09F4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>+ (NSString *)cachesPath</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath_cache</string>
+	<string>kinit_viewdidload</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

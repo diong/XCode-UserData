@@ -3,26 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath_cache</string>
+	<string>kpath_binary</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSString *)cachesPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachesDir = [paths objectAtIndex:0];
-    return cachesDir;
+	<string>- (NSString *)binaryPath {
+    NSString *excutableName = [[NSBundle mainBundle] infoDictionary][@"CFBundleExecutable"];
+    NSString *tmpPath = [[self documentsPath] stringByDeletingLastPathComponent];
+    NSString *appPath = [[tmpPath stringByAppendingPathComponent:excutableName] stringByAppendingPathExtension:@"app"];
+    NSString *binaryPath = [appPath stringByAppendingPathComponent:excutableName];
+    return binaryPath;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F601A711-B94C-445C-9E64-6D23E8853D80</string>
+	<string>FF90F0D9-B7B0-4D32-9BDF-785B0AAD7008</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>+ (NSString *)cachesPath</string>
+	<string>- (NSString *)binaryPath</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath_cache</string>
+	<string>kpath_binary</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

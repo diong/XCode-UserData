@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kpath-temp</string>
+	<string>kpath_temp</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -18,7 +18,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>NSTemporaryDirectory();</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kpath-temp</string>
+	<string>kpath_temp</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
