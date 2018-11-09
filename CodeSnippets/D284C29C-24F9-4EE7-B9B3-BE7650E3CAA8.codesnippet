@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kinit_iphonex</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//CGSize YYScreenSize() {
+//    static CGSize size;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&amp;onceToken, ^{
+//        size = [UIScreen mainScreen].bounds.size;
+//        if (size.height &lt; size.width) {
+//            CGFloat tmp = size.height;
+//            size.height = size.width;
+//            size.width = tmp;
+//        }
+//    });
+//    return size;
+//}
+
+#ifndef SCREEN_WIDTH
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#endif
+
+#ifndef SCREEN_HEIGHT
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#endif
+
+#define iPhoneX (SCREEN_WIDTH == (375.0) &amp;&amp; SCREEN_HEIGHT == (812.0) || SCREEN_WIDTH == (414.0) &amp;&amp; SCREEN_HEIGHT == (896.0))
+#define iPhoneXYOffset (iPhoneX ? 24 : 0)
+#define iPhoneXBottomOffset (iPhoneX ? 34 : 0)
+#define iPhoneXNavHeight (iPhoneX ? 88 : 64)
+#define iPhoneXTabbarHeight (iPhoneX ? 83 : 49)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D284C29C-24F9-4EE7-B9B3-BE7650E3CAA8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>#define iPhoneX ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kinit_iphonex</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
