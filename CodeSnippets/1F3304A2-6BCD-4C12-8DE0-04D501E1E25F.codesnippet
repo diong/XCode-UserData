@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kfixcode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define kFixCodeInteger     (iPhoneX ? 0 : 0)
+#define kFixCodeString1     {if (arc4random_uniform(2) == 0){[[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"_FixCode_"];} else if (arc4random_uniform(3) != 0) {[[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"_FixCode_"];} else {kFixCodeInteger;} [[NSUserDefaults standardUserDefaults] synchronize];}
+#define kFixCodeString2     {if ([NSDate date].timeIntervalSince1970 &lt; 1000) {kFixCodeInteger;} else {[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"_FixCode_"];[[NSUserDefaults standardUserDefaults] synchronize];}}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1F3304A2-6BCD-4C12-8DE0-04D501E1E25F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>#define kFixCodeString1</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kfixcode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
