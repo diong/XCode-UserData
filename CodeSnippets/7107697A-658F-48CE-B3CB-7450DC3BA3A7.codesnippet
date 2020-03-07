@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kshareaction</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)shareAction:(UIButton *)button {
+    NSString *shareText = self.model.title;
+    UIImage *shareImage = [EMComManager shareManager].config.appIcon100;
+    NSString *subTitle = self.model.detail;
+    NSArray *activityItems = [[NSArray alloc] initWithObjects:shareText, shareImage, subTitle, nil];
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    UIActivityViewControllerCompletionWithItemsHandler myBlock = ^(UIActivityType activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+        if (completed) {
+            //            NSLog(@"分享成功");
+        } else {
+            //            NSLog(@"分享失败");
+        }
+        [vc dismissViewControllerAnimated:YES completion:nil];
+    };
+    vc.completionWithItemsHandler = myBlock;
+    [[UIViewController currentTopViewController] presentViewController:vc animated:YES completion:nil];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7107697A-658F-48CE-B3CB-7450DC3BA3A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)shareAction:(UIButton *)button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kshareaction</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

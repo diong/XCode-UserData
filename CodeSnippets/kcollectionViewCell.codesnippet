@@ -23,7 +23,7 @@
 
 - (void)updateConstraints {
     [self.&lt;#subview#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self);
+        make.edges.equalTo(self);
     }];
     [super updateConstraints];
 }</string>
