@@ -8,6 +8,26 @@
 		<array>
 			<dict>
 				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.apple.dt.XcodeBuiltInExtensions,IDESourceEditorExtensionCommand:com.apple.dt.XcodeBuiltInExtensions.ToggleCommentCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>XcodeBuiltInExtensions</string>
+				<key>Title</key>
+				<string>Toggle Comments</string>
+			</dict>
+			<dict>
+				<key>Action</key>
 				<string>activateConsole:</string>
 				<key>Alternate</key>
 				<string>NO</string>
@@ -90,7 +110,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>Standard Editor</string>
+				<string>Editor</string>
 				<key>Title</key>
 				<string>Show Document Items</string>
 			</dict>
