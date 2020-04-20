@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kshareManager</string>
+	<string>ksharedInstance</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)shareManager {
-    static &lt;#class name#&gt; *manager;
+	<string>+ (instancetype)sharedInstance {
+    static &lt;#class name#&gt; *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&amp;onceToken, ^{
-        manager = [[&lt;#class name#&gt; alloc] init];
+        instance = [[&lt;#class name#&gt; alloc] init];
     });
-    return manager;
+    return instance;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B0E0343F-9052-4F6F-A3D0-B6189C3D3182</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>+ (instancetype)shareManager</string>
+	<string>+ (instancetype)sharedInstance</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kshareManager</string>
+	<string>ksharedInstance</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
